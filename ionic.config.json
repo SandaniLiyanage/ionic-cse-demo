@@ -1,6 +1,6 @@
 {
   "name": "cse-ionic",
-  "app_id": "",
+  "app_id": "b4f75778",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
