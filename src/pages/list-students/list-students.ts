@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Student } from '../../data-models/Student';
 import { StudentService } from '../../services/student-service';
 
+import { StudentDetailsPage } from '../student-details/student-details'
 /**
  * Generated class for the ListStudentsPage page.
  *
@@ -35,8 +36,12 @@ export class ListStudentsPage {
         });
   }
 
-  student_selected(student){
-    console.log(student);
+  student_selected(student){    
+    this.navCtrl.push(StudentDetailsPage,{
+      name:student.name,
+      address:student.address,
+      age:student.age
+    });
   }
 
 }
