@@ -35,4 +35,8 @@ export class ListStudentsPage {
         });
   }
 
+  student_selected(student){
+    console.log(student);
+  }
+
 }
